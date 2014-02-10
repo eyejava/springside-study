@@ -1,0 +1,116 @@
+2013-10-29 09:59:20,846 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 09:59:21,555 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 09:59:24,877 [main] WARN  e.jetty.util.component.AbstractLifeCycle -FAILED SelectChannelConnector@0.0.0.0:8080: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:124)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:286)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.springside.examples.showcase.functional.ShowcaseServer.main(ShowcaseServer.java:28)
+2013-10-29 09:59:24,878 [main] WARN  e.jetty.util.component.AbstractLifeCycle -FAILED org.eclipse.jetty.server.Server@617e4c97: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:124)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:286)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.springside.examples.showcase.functional.ShowcaseServer.main(ShowcaseServer.java:28)
+2013-10-29 10:01:44,832 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 10:01:44,832 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 10:03:59,697 [clusterQuartzScheduler_Worker-1] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 10:04:43,684 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 10:04:44,640 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 10:07:43,684 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 10:07:44,640 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 10:08:59,452 [clusterQuartzScheduler_Worker-2] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 15:40:04,171 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 15:40:04,171 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 15:43:03,130 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 15:43:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 15:43:59,442 [clusterQuartzScheduler_Worker-1] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 15:46:03,130 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 15:46:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 15:48:59,436 [clusterQuartzScheduler_Worker-2] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 15:49:03,130 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 15:49:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 15:52:03,134 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 15:52:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 15:53:59,497 [clusterQuartzScheduler_Worker-3] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 15:55:03,131 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 15:55:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 15:58:03,132 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 15:58:04,087 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 15:58:59,418 [clusterQuartzScheduler_Worker-4] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 16:00:00,009 [localQuartzScheduler_Worker-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by quartz local job.
+2013-10-29 16:01:03,130 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:01:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:03:59,435 [clusterQuartzScheduler_Worker-5] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 16:04:03,130 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:04:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:07:03,130 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:07:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:08:59,437 [clusterQuartzScheduler_Worker-1] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 16:10:03,130 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:10:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:13:03,130 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:13:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:13:59,422 [clusterQuartzScheduler_Worker-2] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 16:15:00,003 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring cron job by xml.
+2013-10-29 16:15:00,003 [SpringCronJob1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring cron job by java.
+2013-10-29 16:16:03,130 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:16:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:18:59,432 [clusterQuartzScheduler_Worker-3] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 16:19:03,130 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:19:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:22:03,130 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:22:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:23:59,419 [clusterQuartzScheduler_Worker-4] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 16:25:03,130 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:25:04,087 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:28:03,130 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:28:04,087 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:28:59,406 [clusterQuartzScheduler_Worker-5] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 16:30:00,005 [localQuartzScheduler_Worker-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by quartz local job.
+2013-10-29 16:31:03,129 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:31:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:33:59,477 [clusterQuartzScheduler_Worker-1] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 16:34:03,130 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:34:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:37:03,129 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:37:04,087 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:38:59,424 [clusterQuartzScheduler_Worker-2] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 16:40:03,129 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:40:04,087 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:43:03,130 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:43:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:43:59,450 [clusterQuartzScheduler_Worker-3] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 16:46:03,130 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:46:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:48:59,421 [clusterQuartzScheduler_Worker-4] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 16:49:03,130 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:49:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:52:03,129 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:52:04,087 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:53:59,461 [clusterQuartzScheduler_Worker-5] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 16:55:03,129 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:55:04,087 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:58:03,129 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 16:58:04,087 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 16:58:59,415 [clusterQuartzScheduler_Worker-1] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 17:00:00,004 [localQuartzScheduler_Worker-3] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by quartz local job.
+2013-10-29 17:01:03,129 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 17:01:04,087 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 17:03:59,467 [clusterQuartzScheduler_Worker-2] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-29 17:04:03,129 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 17:04:04,088 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-29 17:07:03,129 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-29 17:07:04,087 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.

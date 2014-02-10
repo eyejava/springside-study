@@ -1,0 +1,758 @@
+2013-10-23 11:23:58,797 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 11:23:58,797 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 11:41:16,149 [main] ERROR pringframework.web.context.ContextLoader -Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor#0': Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in URL [file:/home/lscm/source/opensource/springside/springside4/examples/showcase/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'hibernateJpaVendorAdapter' while setting bean property 'jpaVendorAdapter'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateJpaVendorAdapter' defined in URL [file:/home/lscm/source/opensource/springside/springside4/examples/showcase/target/classes/applicationContext.xml]: Cannot create inner bean 'org.springside.modules.persistence.Hibernates#2eeb3c84' of type [org.springside.modules.persistence.Hibernates] while setting bean property 'databasePlatform'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springside.modules.persistence.Hibernates#2eeb3c84' defined in URL [file:/home/lscm/source/opensource/springside/springside4/examples/showcase/target/classes/applicationContext.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Factory method [public static java.lang.String org.springside.modules.persistence.Hibernates.getDialect(javax.sql.DataSource)] threw exception; nested exception is java.lang.RuntimeException: Could not get database url
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:527)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:733)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:383)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:283)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:740)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:238)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1238)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:683)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:480)
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:256)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:172)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:275)
+	at org.mortbay.jetty.plugin.JettyServer.doStart(JettyServer.java:65)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:511)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:364)
+	at org.mortbay.jetty.plugin.JettyRunMojo.execute(JettyRunMojo.java:516)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:101)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:209)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:84)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:59)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.singleThreadedBuild(LifecycleStarter.java:183)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:161)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:320)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:156)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:537)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:196)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:290)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in URL [file:/home/lscm/source/opensource/springside/springside4/examples/showcase/target/classes/applicationContext.xml]: Cannot resolve reference to bean 'hibernateJpaVendorAdapter' while setting bean property 'jpaVendorAdapter'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateJpaVendorAdapter' defined in URL [file:/home/lscm/source/opensource/springside/springside4/examples/showcase/target/classes/applicationContext.xml]: Cannot create inner bean 'org.springside.modules.persistence.Hibernates#2eeb3c84' of type [org.springside.modules.persistence.Hibernates] while setting bean property 'databasePlatform'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springside.modules.persistence.Hibernates#2eeb3c84' defined in URL [file:/home/lscm/source/opensource/springside/springside4/examples/showcase/target/classes/applicationContext.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Factory method [public static java.lang.String org.springside.modules.persistence.Hibernates.getDialect(javax.sql.DataSource)] threw exception; nested exception is java.lang.RuntimeException: Could not get database url
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1360)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:424)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:277)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.detectPersistenceExceptionTranslators(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.<init>(PersistenceExceptionTranslationInterceptor.java:79)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationAdvisor.<init>(PersistenceExceptionTranslationAdvisor.java:70)
+	at org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor.setBeanFactory(PersistenceExceptionTranslationPostProcessor.java:103)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1475)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	... 50 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'hibernateJpaVendorAdapter' defined in URL [file:/home/lscm/source/opensource/springside/springside4/examples/showcase/target/classes/applicationContext.xml]: Cannot create inner bean 'org.springside.modules.persistence.Hibernates#2eeb3c84' of type [org.springside.modules.persistence.Hibernates] while setting bean property 'databasePlatform'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springside.modules.persistence.Hibernates#2eeb3c84' defined in URL [file:/home/lscm/source/opensource/springside/springside4/examples/showcase/target/classes/applicationContext.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Factory method [public static java.lang.String org.springside.modules.persistence.Hibernates.getDialect(javax.sql.DataSource)] threw exception; nested exception is java.lang.RuntimeException: Could not get database url
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:281)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:120)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1360)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 68 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springside.modules.persistence.Hibernates#2eeb3c84' defined in URL [file:/home/lscm/source/opensource/springside/springside4/examples/showcase/target/classes/applicationContext.xml]: Instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Factory method [public static java.lang.String org.springside.modules.persistence.Hibernates.getDialect(javax.sql.DataSource)] threw exception; nested exception is java.lang.RuntimeException: Could not get database url
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1015)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:911)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:270)
+	... 78 more
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Factory method [public static java.lang.String org.springside.modules.persistence.Hibernates.getDialect(javax.sql.DataSource)] threw exception; nested exception is java.lang.RuntimeException: Could not get database url
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:570)
+	... 83 more
+Caused by: java.lang.RuntimeException: Could not get database url
+	at org.springside.modules.persistence.Hibernates.getDialect(Hibernates.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:149)
+	... 84 more
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Connection is broken: "java.net.SocketException: Connection reset: localhost:40535" [90067-168])
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.springside.modules.persistence.Hibernates.getDialect(Hibernates.java:36)
+	... 89 more
+Caused by: org.h2.jdbc.JdbcSQLException: Connection is broken: "java.net.SocketException: Connection reset: localhost:40535" [90067-168]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:158)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:399)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:317)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:108)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:92)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 92 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	at java.io.DataInputStream.readInt(DataInputStream.java:370)
+	at org.h2.value.Transfer.readInt(Transfer.java:151)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:560)
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:116)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:395)
+	... 100 more
+2013-10-23 13:03:50,292 [main] ERROR pringframework.web.context.ContextLoader -Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.apache.cxf.jaxws.EndpointImpl---839980805': Cannot resolve reference to bean 'accountSoapService' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountSoapService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.examples.showcase.service.AccountEffectiveService org.springside.examples.showcase.webservice.soap.AccountSoapServiceImpl.accountService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountEffectiveService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.modules.cache.memcached.SpyMemcachedClient org.springside.examples.showcase.service.AccountEffectiveService.memcachedClient; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'memcachedSimulator' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:630)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1035)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:939)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:469)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:383)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:283)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:740)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:238)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1238)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:683)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:480)
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:256)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:172)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:275)
+	at org.mortbay.jetty.plugin.JettyServer.doStart(JettyServer.java:65)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:511)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:364)
+	at org.mortbay.jetty.plugin.JettyRunMojo.execute(JettyRunMojo.java:516)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:101)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:209)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:84)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:59)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.singleThreadedBuild(LifecycleStarter.java:183)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:161)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:320)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:156)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:537)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:196)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:290)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountSoapService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.examples.showcase.service.AccountEffectiveService org.springside.examples.showcase.webservice.soap.AccountSoapServiceImpl.accountService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountEffectiveService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.modules.cache.memcached.SpyMemcachedClient org.springside.examples.showcase.service.AccountEffectiveService.memcachedClient; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'memcachedSimulator' is defined
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 57 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.examples.showcase.service.AccountEffectiveService org.springside.examples.showcase.webservice.soap.AccountSoapServiceImpl.accountService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountEffectiveService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.modules.cache.memcached.SpyMemcachedClient org.springside.examples.showcase.service.AccountEffectiveService.memcachedClient; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'memcachedSimulator' is defined
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:506)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284)
+	... 65 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountEffectiveService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.modules.cache.memcached.SpyMemcachedClient org.springside.examples.showcase.service.AccountEffectiveService.memcachedClient; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'memcachedSimulator' is defined
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:876)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:818)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:735)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:478)
+	... 67 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.modules.cache.memcached.SpyMemcachedClient org.springside.examples.showcase.service.AccountEffectiveService.memcachedClient; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'memcachedSimulator' is defined
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:506)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284)
+	... 78 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'memcachedSimulator' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:277)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:876)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:818)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:735)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:478)
+	... 80 more
+2013-10-23 13:03:50,368 [springScheduler-1] ERROR ction.interceptor.TransactionInterceptor -Application exception overridden by rollback exception
+javax.persistence.PersistenceException: org.hibernate.service.UnknownServiceException: Unknown service requested [org.hibernate.event.service.spi.EventListenerRegistry]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1377)
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1300)
+	at org.hibernate.ejb.QueryImpl.getSingleResult(QueryImpl.java:318)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.count(SimpleJpaRepository.java:321)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:334)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:319)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:155)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.data.jpa.repository.support.LockModeRepositoryPostProcessor$LockModePopulatingMethodIntercceptor.invoke(LockModeRepositoryPostProcessor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy54.count(Unknown Source)
+	at org.springside.examples.showcase.service.AccountService.getUserCount(AccountService.java:127)
+	at org.springside.examples.showcase.demos.schedule.UserCountScanner.execute(UserCountScanner.java:49)
+	at org.springside.examples.showcase.demos.schedule.UserCountScanner.executeBySpringTimerByXml(UserCountScanner.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:64)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:53)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:317)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:150)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:204)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: org.hibernate.service.UnknownServiceException: Unknown service requested [org.hibernate.event.service.spi.EventListenerRegistry]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:126)
+	at org.hibernate.internal.SessionImpl.eventListenerGroup(SessionImpl.java:734)
+	at org.hibernate.internal.SessionImpl.listeners(SessionImpl.java:730)
+	at org.hibernate.internal.SessionImpl.autoFlushIfRequired(SessionImpl.java:1181)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1237)
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101)
+	at org.hibernate.ejb.QueryImpl.getSingleResult(QueryImpl.java:285)
+	... 36 more
+2013-10-23 13:03:50,371 [springScheduler-1] ERROR ng.support.TaskUtils$LoggingErrorHandler -Unexpected error occurred in scheduled task.
+org.springframework.transaction.TransactionSystemException: Could not roll back JPA transaction; nested exception is javax.persistence.PersistenceException: unexpected error when rollbacking
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:543)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:845)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:822)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.completeTransactionAfterThrowing(TransactionAspectSupport.java:412)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:114)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:155)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.data.jpa.repository.support.LockModeRepositoryPostProcessor$LockModePopulatingMethodIntercceptor.invoke(LockModeRepositoryPostProcessor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy54.count(Unknown Source)
+	at org.springside.examples.showcase.service.AccountService.getUserCount(AccountService.java:127)
+	at org.springside.examples.showcase.demos.schedule.UserCountScanner.execute(UserCountScanner.java:49)
+	at org.springside.examples.showcase.demos.schedule.UserCountScanner.executeBySpringTimerByXml(UserCountScanner.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:64)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:53)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:317)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:150)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:204)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+Caused by: javax.persistence.PersistenceException: unexpected error when rollbacking
+	at org.hibernate.ejb.TransactionImpl.rollback(TransactionImpl.java:109)
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:539)
+	... 31 more
+Caused by: org.hibernate.service.UnknownServiceException: Unknown service requested [org.hibernate.stat.spi.StatisticsImplementor]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:126)
+	at org.hibernate.internal.SessionFactoryImpl.getStatisticsImplementor(SessionFactoryImpl.java:1429)
+	at org.hibernate.internal.SessionFactoryImpl.getStatistics(SessionFactoryImpl.java:1425)
+	at org.hibernate.engine.transaction.internal.TransactionCoordinatorImpl.afterTransaction(TransactionCoordinatorImpl.java:140)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.afterTransactionCompletion(JdbcTransaction.java:138)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.rollback(AbstractTransactionImpl.java:214)
+	at org.hibernate.ejb.TransactionImpl.rollback(TransactionImpl.java:106)
+	... 32 more
+2013-10-23 13:05:33,256 [springScheduler-1] ERROR ng.support.TaskUtils$LoggingErrorHandler -Unexpected error occurred in scheduled task.
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'transactionManager': Singleton bean creation not allowed while the singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:212)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.determineTransactionManager(TransactionAspectSupport.java:249)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:100)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:155)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.data.jpa.repository.support.LockModeRepositoryPostProcessor$LockModePopulatingMethodIntercceptor.invoke(LockModeRepositoryPostProcessor.java:91)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:202)
+	at $Proxy54.count(Unknown Source)
+	at org.springside.examples.showcase.service.AccountService.getUserCount(AccountService.java:127)
+	at org.springside.examples.showcase.demos.schedule.UserCountScanner.execute(UserCountScanner.java:49)
+	at org.springside.examples.showcase.demos.schedule.UserCountScanner.executeBySpringTimerByXml(UserCountScanner.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:64)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:53)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:317)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:150)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:204)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:662)
+2013-10-23 13:05:33,764 [main] ERROR pringframework.web.context.ContextLoader -Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.apache.cxf.jaxws.EndpointImpl--1915664131': Cannot resolve reference to bean 'accountSoapService' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountSoapService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.examples.showcase.service.AccountEffectiveService org.springside.examples.showcase.webservice.soap.AccountSoapServiceImpl.accountService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountEffectiveService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.modules.cache.memcached.SpyMemcachedClient org.springside.examples.showcase.service.AccountEffectiveService.memcachedClient; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'memcachedSimulator' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:328)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:630)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1035)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:939)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:469)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:383)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:283)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:740)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:238)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1238)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:683)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:480)
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:256)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:172)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:275)
+	at org.mortbay.jetty.plugin.JettyServer.doStart(JettyServer.java:65)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:511)
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:364)
+	at org.mortbay.jetty.plugin.JettyRunMojo.execute(JettyRunMojo.java:516)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:101)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:209)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:84)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:59)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.singleThreadedBuild(LifecycleStarter.java:183)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:161)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:320)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:156)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:537)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:196)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:290)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:230)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:409)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:352)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountSoapService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.examples.showcase.service.AccountEffectiveService org.springside.examples.showcase.webservice.soap.AccountSoapServiceImpl.accountService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountEffectiveService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.modules.cache.memcached.SpyMemcachedClient org.springside.examples.showcase.service.AccountEffectiveService.memcachedClient; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'memcachedSimulator' is defined
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	... 57 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.examples.showcase.service.AccountEffectiveService org.springside.examples.showcase.webservice.soap.AccountSoapServiceImpl.accountService; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountEffectiveService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.modules.cache.memcached.SpyMemcachedClient org.springside.examples.showcase.service.AccountEffectiveService.memcachedClient; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'memcachedSimulator' is defined
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:506)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284)
+	... 65 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountEffectiveService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.modules.cache.memcached.SpyMemcachedClient org.springside.examples.showcase.service.AccountEffectiveService.memcachedClient; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'memcachedSimulator' is defined
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:876)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:818)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:735)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:478)
+	... 67 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.springside.modules.cache.memcached.SpyMemcachedClient org.springside.examples.showcase.service.AccountEffectiveService.memcachedClient; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'memcachedSimulator' is defined
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:506)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284)
+	... 78 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'memcachedSimulator' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1095)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:277)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:876)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:818)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:735)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:478)
+	... 80 more
+2013-10-23 13:10:48,791 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:10:48,791 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:13:47,726 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:13:48,687 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:13:59,635 [clusterQuartzScheduler_Worker-1] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 13:15:00,004 [SpringCronJob1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring cron job by java.
+2013-10-23 13:15:00,004 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring cron job by xml.
+2013-10-23 13:16:47,725 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:16:48,687 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:18:59,429 [clusterQuartzScheduler_Worker-2] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 13:19:44,352 [main] WARN  net.sf.ehcache.DiskStorePathManager      -diskStorePath 'net.sf.ehcache.DiskStorePathManager$DiskStorePath@3a2cd728' is already used by an existing CacheManager either in the same VM or in a different process.
+The diskStore path for this CacheManager will be set to /tmp/ehcache/showcase/hibernate/ehcache_auto_created1769364598504757439diskstore.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+2013-10-23 13:19:46,515 [advancedQueueContainer-1] INFO  s.advanced.AdvancedNotifyMessageListener -UserName:calvin, Email:calvin@sringside.org.cn, ObjectType:user
+2013-10-23 13:19:47,724 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:19:48,686 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:20:39,191 [advancedTopicContainer-1] INFO  s.advanced.AdvancedNotifyMessageListener -UserName:calvin, Email:calvin@sringside.org.cn, ObjectType:user
+2013-10-23 13:22:47,729 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:22:48,688 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:23:59,421 [clusterQuartzScheduler_Worker-3] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 13:25:00,449 [main] ERROR ramework.test.context.TestContextManager -Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@17e319a] to prepare test instance [org.springside.examples.showcase.demos.mail.MailServiceTest@3ea763a]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'greenmail' defined in class path resource [email/applicationContext-email.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Couldnt start at least one of the mail services.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:591)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:469)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 24 more
+Caused by: java.lang.RuntimeException: Couldnt start at least one of the mail services.
+	at com.icegreen.greenmail.util.GreenMail.start(GreenMail.java:91)
+	at org.springside.modules.test.mail.MailServerSimulator.afterPropertiesSet(MailServerSimulator.java:32)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1452)
+	... 38 more
+2013-10-23 13:25:47,727 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:25:48,686 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:28:47,724 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:28:48,687 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:28:52,541 [main] ERROR ramework.test.context.TestContextManager -Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@59e14a78] to prepare test instance [org.springside.examples.showcase.demos.mail.MailServiceTest@55e03a61]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'greenmail' defined in class path resource [email/applicationContext-email.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Couldnt start at least one of the mail services.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:591)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:469)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 24 more
+Caused by: java.lang.RuntimeException: Couldnt start at least one of the mail services.
+	at com.icegreen.greenmail.util.GreenMail.start(GreenMail.java:91)
+	at org.springside.modules.test.mail.MailServerSimulator.afterPropertiesSet(MailServerSimulator.java:32)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1452)
+	... 38 more
+2013-10-23 13:28:59,444 [clusterQuartzScheduler_Worker-4] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 13:30:00,009 [localQuartzScheduler_Worker-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by quartz local job.
+2013-10-23 13:31:47,724 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:31:48,687 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:33:59,466 [clusterQuartzScheduler_Worker-5] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 13:34:47,724 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:34:48,687 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:37:47,724 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:37:48,687 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:38:59,423 [clusterQuartzScheduler_Worker-1] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 13:40:47,724 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:40:48,687 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:43:47,724 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:43:48,687 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:43:59,430 [clusterQuartzScheduler_Worker-2] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 13:46:47,724 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:46:48,686 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:48:59,433 [clusterQuartzScheduler_Worker-3] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 13:49:47,723 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:49:48,687 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:52:47,725 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 13:52:48,686 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:53:59,406 [clusterQuartzScheduler_Worker-4] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 13:55:23,418 [qtp932143669-123] WARN  .cxf.transport.servlet.ServletController -Can't find the the request for http://localhost:8080/showcase/cxf//'s Observer 
+2013-10-23 13:55:50,452 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 13:56:04,861 [qtp932143669-122] WARN  .cxf.transport.servlet.ServletController -Can't find the the request for http://localhost:8080/showcase/cxf//'s Observer 
+2013-10-23 13:59:47,332 [main] WARN  e.jetty.util.component.AbstractLifeCycle -FAILED SelectChannelConnector@0.0.0.0:8080: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:124)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:286)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.springside.examples.showcase.Main.main(Main.java:20)
+2013-10-23 13:59:47,334 [main] WARN  e.jetty.util.component.AbstractLifeCycle -FAILED org.eclipse.jetty.server.Server@7f724a9d: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:124)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:286)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.springside.examples.showcase.Main.main(Main.java:20)
+2013-10-23 14:03:07,792 [main] WARN  e.jetty.util.component.AbstractLifeCycle -FAILED SelectChannelConnector@0.0.0.0:8080: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:124)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:286)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.springside.examples.showcase.Main.main(Main.java:20)
+2013-10-23 14:03:07,793 [main] WARN  e.jetty.util.component.AbstractLifeCycle -FAILED org.eclipse.jetty.server.Server@7f724a9d: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:124)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:286)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.springside.examples.showcase.Main.main(Main.java:20)
+2013-10-23 14:07:30,147 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:07:30,148 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:07:34,087 [main] WARN  e.jetty.util.component.AbstractLifeCycle -FAILED SelectChannelConnector@0.0.0.0:8080: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:124)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:286)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.springside.examples.showcase.functional.ShowcaseServer.main(ShowcaseServer.java:28)
+2013-10-23 14:07:34,088 [main] WARN  e.jetty.util.component.AbstractLifeCycle -FAILED org.eclipse.jetty.server.Server@e026aee: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:124)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:286)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.springside.examples.showcase.functional.ShowcaseServer.main(ShowcaseServer.java:28)
+2013-10-23 14:08:24,325 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:08:24,325 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:08:59,810 [clusterQuartzScheduler_Worker-1] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 14:11:23,227 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:11:24,186 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:13:59,411 [clusterQuartzScheduler_Worker-2] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 14:14:23,226 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:14:24,187 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:15:00,004 [SpringCronJob1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring cron job by java.
+2013-10-23 14:15:00,004 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring cron job by xml.
+2013-10-23 14:17:23,226 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:17:24,186 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:18:59,412 [clusterQuartzScheduler_Worker-3] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 14:20:23,227 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:20:24,186 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:23:23,226 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:23:24,188 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:23:59,385 [clusterQuartzScheduler_Worker-4] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 14:26:23,226 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:26:24,186 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:28:59,417 [clusterQuartzScheduler_Worker-5] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 14:29:23,226 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:29:24,186 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:30:00,005 [localQuartzScheduler_Worker-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by quartz local job.
+2013-10-23 14:32:23,226 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:32:24,186 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:33:59,413 [clusterQuartzScheduler_Worker-1] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 14:35:23,226 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:35:24,186 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:38:23,226 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:38:24,186 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:38:59,397 [clusterQuartzScheduler_Worker-2] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 14:41:23,226 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:41:24,186 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:43:59,516 [clusterQuartzScheduler_Worker-3] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 14:44:23,226 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:44:24,186 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:47:23,226 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:47:24,186 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:48:59,525 [clusterQuartzScheduler_Worker-4] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 14:50:23,226 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:50:24,185 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:53:23,226 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:53:24,186 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:53:59,393 [clusterQuartzScheduler_Worker-5] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 14:56:23,226 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:56:24,186 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 14:58:59,425 [clusterQuartzScheduler_Worker-1] INFO  case.demos.schedule.QuartzClusterableJob -There are 6 user in database, printed by quartz cluster job on node default.
+2013-10-23 14:59:23,225 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-23 14:59:24,186 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
+2013-10-23 15:00:00,005 [localQuartzScheduler_Worker-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by quartz local job.

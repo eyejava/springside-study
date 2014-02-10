@@ -1,0 +1,9 @@
+2013-10-24 16:53:55,397 [main] WARN  examples.showcase.service.AccountService -操作员foo尝试修改超级管理员用户
+2013-10-24 16:54:23,965 [main] WARN  ngframework.aop.framework.Cglib2AopProxy -Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-10-24 16:54:36,989 [main] WARN  ngframework.aop.framework.Cglib2AopProxy -Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-10-24 16:54:37,191 [main] INFO  s.showcase.repository.jpa.JpaMappingTest -ok: Team
+2013-10-24 16:54:37,206 [main] INFO  s.showcase.repository.jpa.JpaMappingTest -ok: User
+2013-10-24 16:54:37,212 [main] INFO  s.showcase.repository.jpa.JpaMappingTest -ok: Role
+2013-10-24 16:56:07,317 [main] WARN  ngframework.aop.framework.Cglib2AopProxy -Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-10-24 16:58:26,618 [main] WARN  ngframework.aop.framework.Cglib2AopProxy -Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-10-24 16:58:26,742 [springScheduler-1] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.

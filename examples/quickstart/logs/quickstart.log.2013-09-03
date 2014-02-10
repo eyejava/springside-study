@@ -1,0 +1,75 @@
+2013-09-03 12:30:59,726 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-09-03 12:30:59,924 [main] INFO  [org.springside.examples.quickstart.repository.JpaMappingTest] - ok: User
+2013-09-03 12:30:59,933 [main] INFO  [org.springside.examples.quickstart.repository.JpaMappingTest] - ok: Task
+2013-09-03 12:31:25,821 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-09-03 13:19:08,727 [main] INFO  [org.springside.examples.quickstart.functional.BaseFunctionalTestCase] - Jetty Server started
+2013-09-03 13:19:37,978 [main] WARN  [org.eclipse.jetty.util.component.AbstractLifeCycle] - FAILED SelectChannelConnector@0.0.0.0:8082: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:124)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:286)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.springside.examples.quickstart.functional.BaseFunctionalTestCase.startJettyOnce(BaseFunctionalTestCase.java:65)
+	at org.springside.examples.quickstart.functional.BaseFunctionalTestCase.beforeClass(BaseFunctionalTestCase.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+2013-09-03 13:19:37,979 [main] WARN  [org.eclipse.jetty.util.component.AbstractLifeCycle] - FAILED org.eclipse.jetty.server.Server@3dd4ab05: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:124)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:59)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:187)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:265)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:286)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.springside.examples.quickstart.functional.BaseFunctionalTestCase.startJettyOnce(BaseFunctionalTestCase.java:65)
+	at org.springside.examples.quickstart.functional.BaseFunctionalTestCase.beforeClass(BaseFunctionalTestCase.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+2013-09-03 13:19:57,905 [main] INFO  [org.springside.examples.quickstart.functional.BaseFunctionalTestCase] - Jetty Server started
+2013-09-03 13:22:13,291 [main] INFO  [org.springside.examples.quickstart.functional.BaseFunctionalTestCase] - Jetty Server started
+2013-09-03 13:25:39,897 [main] INFO  [org.springside.examples.quickstart.functional.BaseFunctionalTestCase] - Jetty Server started
+2013-09-03 13:36:23,607 [main] INFO  [org.springside.examples.quickstart.functional.BaseFunctionalTestCase] - Jetty Server started
+2013-09-03 13:43:05,814 [main] INFO  [org.springside.examples.quickstart.functional.BaseFunctionalTestCase] - Jetty Server started
+2013-09-03 13:43:47,295 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-09-03 13:43:47,495 [main] INFO  [org.springside.examples.quickstart.repository.JpaMappingTest] - ok: User
+2013-09-03 13:43:47,505 [main] INFO  [org.springside.examples.quickstart.repository.JpaMappingTest] - ok: Task
+2013-09-03 13:44:11,418 [main] WARN  [org.springframework.aop.framework.Cglib2AopProxy] - Unable to proxy method [public final void org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests.setApplicationContext(org.springframework.context.ApplicationContext)] because it is final: All calls to this method via a proxy will be routed directly to the proxy.
+2013-09-03 13:44:56,841 [main] WARN  [org.springside.examples.quickstart.service.account.AccountService] - 操作员foo尝试删除超级管理员用户
+2013-09-03 13:46:09,708 [main] INFO  [org.springside.examples.quickstart.functional.BaseFunctionalTestCase] - Jetty Server started
+2013-09-03 13:46:10,161 [main] WARN  [org.springframework.web.client.RestTemplate] - GET request for "http://localhost:8082/quickstart/api/v1/task/6" resulted in 404 (Not Found); invoking error handler
+2013-09-03 13:46:10,213 [main] WARN  [org.springframework.web.client.RestTemplate] - POST request for "http://localhost:8082/quickstart/api/v1/task" resulted in 400 (Bad Request); invoking error handler
+2013-09-03 13:48:05,269 [main] INFO  [org.springside.examples.quickstart.functional.BaseFunctionalTestCase] - Jetty Server started

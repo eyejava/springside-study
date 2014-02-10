@@ -1,0 +1,2 @@
+2013-10-21 10:18:53,698 [springScheduler-2] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by spring timer job by xml.
+2013-10-21 10:18:53,698 [JdkTimerJob-0] INFO  showcase.demos.schedule.UserCountScanner -There are 6 user in database, printed by jdk timer job.
